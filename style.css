@@ -1,0 +1,109 @@
+/* Variables */
+:root{
+    --primary: #FFC636;
+    --secondary: #0A0B5B;
+    /* --primary : red; */
+}
+
+
+/* RESET */
+li{
+    list-style-type: none;
+}
+
+body,p,a,ul,li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+
+/* basic style */
+
+body{
+    background-color: var(--secondary);
+    overflow-x: hidden;
+    font-family: 'Rubik-Regular';
+    
+}
+
+.button{
+    background: none;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+}
+
+.button:hover{
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+input,textarea{
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 2px solid #9893d8;
+    color: #fff;
+}
+/* font */
+    @font-face{
+        font-family: 'Rubik Regular';
+        src: url('assets/fonts/Rubik-Regular.ttf');
+    }
+    h1,h2,h3,h4{
+        font-weight: normal;
+        color: #DDDBFF;
+    }
+
+    p,a,li{
+        color: #9893d8;
+    }
+
+    h1,h3{
+        font-size: 1.2em;
+    }
+    h2{
+        font-size: 1.6em;
+    }
+    h4{
+        font-size: 1.1em;
+    }
+    .leading{
+        font-size: 1.1em;
+    }
+/* mobile style  */
+
+/* small tablet style  */
+
+
+@media screen and (min-width : 620px) {
+    body{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    body{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        font-size: 20px;
+    }   
+}
+
+
+/* grid */
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
